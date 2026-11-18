@@ -1,13 +1,13 @@
 {% set name = "git-remote-codecommit" %}
-{% set version = "1.16" %}
+{% set version = "1.18" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f8e10cc5c177486022e4e7c2c08e671ed35ad63f3a2da1309a1f8eae7b6e69da
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: a34b737b0bd4b52932fd12cc42b3dfed5a7e4d87b5bc24910b90bf6e0f42f580
 
 build:
   noarch: python
